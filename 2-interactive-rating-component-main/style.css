@@ -36,7 +36,7 @@ body{
 }
 
 .star{
-    background: var(--cor-Medium-Grey);
+    background: var(--cor-Light-Grey);
     padding: 10px;
     border-radius: 100%;
 }
@@ -49,6 +49,9 @@ h1{
 
 p{
     color: var(--cor-Light-Grey);
+    font-family: var(--inter-font-family);
+    font-size: 13px;
+    line-height: 1.5em;  
 }
 
 ul{
@@ -60,8 +63,8 @@ ul{
 
 
 li{
-    color: var(--cor-Light-Grey);
-    font-weight: 700; 
+    color: var(--cor-White);
+    /* font-weight: bold;   */
     list-style-type: none;
     padding: 10px;
     border: 2px solid var(--cor-Medium-Grey);
@@ -69,7 +72,14 @@ li{
     height: 40px;
     background: var(--cor-Medium-Grey);
     border-radius: 100%;
-    cursor: pointer;   
+    cursor: pointer;
+    /* font-family: var(--inter-font-family);    */
+}
+
+li:hover {
+    background-color: var(--cor-Orange);
+    color: var(--cor-White);
+    border: none;
 }
 
 .hidden{
@@ -86,4 +96,41 @@ button {
     border: none;
     margin: 15px 0;
     cursor: pointer;
+    letter-spacing: 2.5px;
+}
+
+button:hover{
+    background: var(--cor-White);
+    color: var(--cor-Orange);
+}
+
+/* #################### Thank you state start ########################## */
+
+.card__img{
+    text-align: center;
+}
+
+.card__paragraph p{
+    text-align: center;
+    border: 1px solid var(--cor-Medium-Grey);
+    background: var(--cor-Medium-Grey);
+    color: var(--cor-Orange);
+    font-weight: bolder;
+    padding: 5px 0;
+    border-radius: 20px;
+    margin: 20px auto;
+     width: 200px;
+}
+
+.card__title h2{
+    text-align: center;
+    margin: 30px 0 10px 0;
+    color: white;
+}
+
+.card__lastParagraph p{
+    text-align: center;
+    line-height: 1.5em;
+     font-size: 13px;
+    font-family: var(--inter-font-family);  
 }
