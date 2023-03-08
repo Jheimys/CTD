@@ -76,6 +76,20 @@ li{
     /* font-family: var(--inter-font-family);    */
 }
 
+.newLi{
+    color: var(--cor-White);
+    /* font-weight: bold;   */
+    list-style-type: none;
+    padding: 10px;
+    border: 2px solid var(--cor-Medium-Grey);
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 100%;
+    cursor: pointer;
+    /* font-family: var(--inter-font-family);    */
+}
+
 li:hover {
     background-color: var(--cor-Orange);
     color: var(--cor-White);
