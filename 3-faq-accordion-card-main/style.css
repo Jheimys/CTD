@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* text */
+    --cor-Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --cor-Soft-red: hsl(14, 88%, 65%);
+    --cor-Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --cor-Dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* Background gradient: */
+    --cor-Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+
+    /* Dividers */
+    --cor-Light-grayish-blue: hsl(240, 5%, 91%);
+
+    /* font */
+    --font-Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans);
+}
+
+body{
+    background: var(--cor-Soft-violet);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background: white;
+    width: 800px;
+    height: 450px;
+    border-radius: 20px;
+}
