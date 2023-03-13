@@ -17,7 +17,6 @@ for(let i = 0; i < lis.length; i++) {          //Percorre todas as lis
     })
 }
 
-
 btnSubmit.addEventListener('click', () => {  //adiciona o eveneto de click no botão submit
     cards[0].classList.add('hidden')         // adiciona a classe hidden na primeira div
     cards[1].classList.remove('hidden')     // remove a classe hidden na segunda div
