@@ -19,21 +19,107 @@
     --cor-Light-grayish-blue: hsl(240, 5%, 91%);
 
     /* font */
-    --font-Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans);
+    --font-Berkshire-font-family: 'Berkshire Swash', cursive;
+    --font-Inter-font-family: 'Inter', sans-serif;
+    --font-Kumbh-font-family: 'Kumbh Sans', sans-serif;
+    --font-Overpass-font-family: 'Overpass', sans-serif;
+    --font-Roboto-font-family: 'Roboto', sans-serif;
 }
 
 body{
-    background: var(--cor-Soft-violet);
-    display: flex;
+    margin: 0;
+    font-size: 12px;
     height: 100vh;
+    width: 100vw;
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 
-.box {
-    background: white;
-    width: 800px;
-    height: 450px;
-    border-radius: 20px;
+.wrapper {
+    background: rgb(226,226,226) url(./images/bg-pattern-desktop.svg) no-repeat 1260% 65%;
+    border-radius: 30px;
+    height: 510px;
+    width: 920px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 6rem;
 }
+
+.image__wrapper{
+    position: relative;
+    width: 472px;
+    overflow: hidden;
+
+}
+
+.image__wrapper--inner{
+    position: absolute;
+    transform: translateY(35px) translateX(-75px);
+    /* height: 70%;
+    top: 10px;
+    left: -16px;
+    transform: translateY(15px) translateX(-45px); */
+}
+
+.box{
+    position: absolute;
+    top: 40%;
+    left: -27%;
+    transform: translateY(-15%) translateX(260%);
+}
+
+.accordian__wrapper{
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+}
+.questions__accoridan{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.answer {
+    display: none;
+}
+
+.active .answer{
+    display: block;
+    padding-bottom: 1.3rem;
+    color: var(--cor-Very-dark-desaturated-blue);
+    transition: all .3s ease-in;
+}
+
+.questions-answer__accordian{
+    width: 350px;
+    border-bottom: 1px solid var(--cor-Light-grayish-blue);
+}
+
+.tile__accordian {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.title__question {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--cor-Very-dark-grayish-blue);
+    margin: 1.4rem 0rem;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.question img {
+    align-self: center;
+}
+
+
+
+
 

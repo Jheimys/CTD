@@ -25,36 +25,83 @@
       }
     </style>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="box">
-      <div class="box__image">
-        <img src="./images/illustration-box-desktop.svg" alt="box-desktop" />
-        <img
-          src="./images/illustration-woman-online-desktop.svg"
-          alt="woman-desktop"
-        />
+    <main class="wrapper">
+      <div class="image__wrapper">
+        <div class="image__wrapper--inner">
+          <img
+            src="./images/illustration-woman-online-desktop.svg"
+            alt="woman"
+          />
+        </div>
       </div>
 
-      <div class="box__text">
-        How many team members can I invite? You can invite up to 2 additional
-        users on the Free plan. There is no limit on team members for the
-        Premium plan. What is the maximum file upload size? No more than 2GB.
-        All files in your account must fit your allotted storage space. How do I
-        reset my password? Click “Forgot password” from the login page or
-        “Change password” from your profile page. A reset link will be emailed
-        to you. Can I cancel my subscription? Yes! Send us a message and we’ll
-        process your request no questions asked. Do you provide additional
-        support? Chat and email support is available 24/7. Phone lines are open
-        during normal business hours.
-      </div>
-    </div>
+      <img class="box" src="./images/illustration-box-desktop.svg" alt="box" />
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      <div class="accordian__wrapper">
+        <h1 class="title__accordian">FAQ</h1>
+        <div class="questions__accoridan">
+          <div class="questions-answer__accordian">
+            <div class="question">
+              <h3 class="title__question">
+                How many team members can I invite?
+              </h3>
+              <img src="./images/icon-arrow-down.svg" alt="arrow" />
+            </div>
+            <div class="answer">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </div>
+          </div>
+
+          <div class="questions-answer__accordian">
+            <div class="question">
+              <h3 class="title__question">
+                What is the maximum file upload size?
+              </h3>
+              <img src="./images/icon-arrow-down.svg" alt="arrow" />
+            </div>
+            <div class="answer">
+              No more than 2GB.All files in your account must fit your allotted
+              storage space
+            </div>
+          </div>
+
+          <div class="questions-answer__accordian">
+            <div class="question">
+              <h3 class="title__question">How do Ireset my password?</h3>
+              <img src="./images/icon-arrow-down.svg" alt="arrow" />
+            </div>
+
+            <div class="answer">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page.
+            </div>
+          </div>
+
+          <div class="questions-answer__accordian">
+            <div class="question">
+              <h3 class="title__question">
+                Do you provide additional support?
+              </h3>
+              <img src="./images/icon-arrow-down.svg" alt="arrow" />
+            </div>
+            <div class="answer">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
   </body>
 </html>
